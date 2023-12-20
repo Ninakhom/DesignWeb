@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1140;
+    margin:  0rem 10rem;
+}
+nav{
+padding: 1rem;
+background-color:white ;
+}
+.nav-con{
+    display: flex;
+    justify-content: space-between;
+}
+.logo img{
+    width: 30%;
+    
+}
+.menu{
+    display: flex;
+    list-style: none;
+    align-items: center;
+
+}
+.menu li{
+margin: 0 1rem;
+}
+.menu li a{
+    color: darkgray;
+    text-decoration: none;
+}
+.main{
+    background-color: white;
+}
+.main-con{
+    display: flex;
+    z-index: 0;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUap5P7QIBDqbligFxFfHoZ_vJW9Kml0sbTA&usqp=CAU);
+    height: 700px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+    
+
+}
+.main-img{
+    background-color: rgba(183, 231, 183, 0.904);
+    height: 700px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+
+}
+.main-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 2;
+    position: absolute;
+    height: 100%; /* Added to fill the entire .main-con */
+    width: 100%;
+
+}
+.main-info h3{
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem;
+
+}
+.main-info p{
+    margin: 0 1rem;
+    text-align: center;
+}
+.main-info .main-btn{
+    display: inline-block;
+    background-color: white;
+    color: black;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    margin: 2rem;
+}
+.blog-con{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 4rem;
+    
+}
+.blog-title{
+    text-align: center;
+    margin: 2rem 0;
+}
+.blog-item image{
+    width: 100%;
+    
+}
+    
+
+.blog-item h3{
+    text-align: center;
+    margin-top: 1rem;
+}
+.blog-item p{
+    margin: 1rem 0rem;
+    
+}
+
+
