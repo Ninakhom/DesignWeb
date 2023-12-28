@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto:wght@100&display=swap');
+
+:root {
+    --white: #fff;
+    --mx-con: 1400px;
+    --yellow: #ffc220;
+    --black:#333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: var(--mx-con);
+    margin: 0 auto;
+}
+
+/* header */
+
+header {
+    height: 800px;
+    background-image: url('./img/Header-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+    & nav {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+
+        & .menu {
+            display: flex;
+            list-style: none;
+
+            & li {
+                margin: 0 2rem;
+
+                & a {
+                    text-decoration: none;
+                    color: var(--white);
+                }
+            }
+
+        }
+
+
+    }
+
+    & .header-info--wrapper {
+        /* outline: 1px solid red; */
+        display: flex;
+        justify-content: end;
+
+        & .header-info--con {
+            margin-top: 150px;
+            /* outline: 1px solid red; */
+            margin-right: 120px;
+
+        }
+
+        & .header-info--title {
+            color: var(--yellow);
+            font-size: 125px;
+        }
+
+        & .header-info--desc {
+            font-size: 29px;
+            width: 670px;
+            color: var(--white);
+            margin: 20px 0;
+
+        }
+        & .header-info--btn{
+            width: 245px;
+            height: 50px;
+            background-color: var(--yellow);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: var(--black);
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 19;
+
+        }
+
+
+    }
+
+
+}
+@media screen and (max-width:480px){
+    header{
+        height: auto;
+
+        & nav {
+            flex-direction: column;
+
+            & .logo {
+                text-align: center;
+            }
+
+            & .menu{
+                flex-direction: column;
+                align-items: center;
+
+                & .li{
+                    margin: 20px 0;
+                }
+            }
+        }
+        
+        & .header-info--wrapper{
+
+            & .header-info--con{
+                        margin: 50px 0;
+                        text-align: center;
+                        padding: 40px 0;
+                        & .header-info--title{
+                            font-size: 48px;
+
+                        }
+                        & .header-info--desc{
+                            width: 100%;
+                        }
+                        & .header-info--btn-wrapper{
+                            display: flex;
+                            justify-content: center;
+                        }
+            }
+            
+            
+        }
+    }
+}
